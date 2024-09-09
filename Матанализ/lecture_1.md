@@ -4,7 +4,7 @@ $A:R^{m}\rightarrow R^n$
 $m,n>=1$ 
 $||A||=sup_{x \in R^m}||Ax||_{R^n}$
 1. $||A||>=0;||A||=0 \rightarrow A=O$, т.е.$Ox=O_n\forall$ $x \in R_m$
-	$A_{n*m}=$$$\begin{bmatrix}a_n.....a_{1m} \\.\\.\\.\\a_m.....a_{nm}\end{bmatrix}\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=\begin{bmatrix}a_{11} \\.\\1\\.\\a_{ni}\end{bmatrix}$$
+	$A_{n*m}=\begin{bmatrix}a_n.....a_{1m} \\.\\.\\.\\a_m.....a_{nm}\end{bmatrix}\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=\begin{bmatrix}a_{11} \\.\\1\\.\\a_{ni}\end{bmatrix}$
 $1<=j<=m$ $1<=i<=n$ 
 $e_i=[0....1...0]$
 $f_j=\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}$
