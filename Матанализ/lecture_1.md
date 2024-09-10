@@ -12,7 +12,7 @@ $e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=0$(2)
 $e_i(A_{n*m}f_j)=e_i\begin{bmatrix}a_{1j} \\.\\ .\\.\\a_{ij}\end{bmatrix}=a_{ij}$(3)
 (2),(3)--$a_{ij}=0$
 2. $cR$  $||cA||=|c|*||A||$
-$||cA||=sup_{xR^m}||(cA)x||_{R^n}=sup||c(Ax)||_{R^n}=sup|c|*||Ax||_{R^n}=|c|*sup||Ax||_{R^n}=|c|*||A||$
+$||cA||= sup_{x\in R^m}||(cA)x||_{R^n}=sup||c(Ax)||_{R^n}=sup|c|*||Ax||_{R^n}=|c|*sup||Ax||_{R^{n}}=|c|*||A||$
 3. $A,B:R^m-R^n$
 $||A+B||<=||A||+||B||$
 $||A+B||=sup_{x \in R^m}||(A+B)x||_{R^n}=sup||Ax+Bx||_{R^n}<=sup(||Ax||_{R^n}+||Bx||_{R^n})<=sup||Ax||_{R^n}+sup||Bx||_{R^n}=||A||+||B||$
