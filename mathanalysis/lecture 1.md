@@ -1,4 +1,4 @@
-## Норма линейного оператора
+### Норма линейного оператора
 
 $A:R^{m}\rightarrow R^n$
 $m,n>=1$ 
@@ -8,8 +8,8 @@ $||A||=sup_{x \in R^m}||Ax||_{R^n}$
 $1<=j<=m$ $1<=i<=n$ 
 $e_i=[0....1...0]$
 $f_j=\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}$
-$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=0$(2)
-$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}a_{1j} \\.\\ .\\.\\a_{ij}\end{bmatrix}=a_{ij}$(3)
+$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=0$ ==(2)==
+$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}a_{1j} \\.\\ .\\.\\a_{ij}\end{bmatrix}=a_{ij}$ ==(3)==
 (2),(3)--$a_{ij}=0$
 2. $cR$  $||cA||=|c|*||A||$
 $||cA||= sup_{x\in R^m}||(cA)x||_{R^n}=sup||c(Ax)||_{R^n}=sup|c|*||Ax||_{R^n}=|c|*sup||Ax||_{R^{n}}=|c|*||A||$
@@ -22,17 +22,17 @@ $y=\frac{1}{t}x$   $||y||_{R^m}=\frac{1}{t}||x||=1$
 $||Ay||_{R^n}<=sup||AU||_{R^n}=||A||$
 $x=ty==>||Ax||_{R^n}=||A(ty)||_{R^n}=t||Ay||_{R^n}<=t||A||$
 5. $c_0>0$
-$\forall x \in R^m ||Ax||_{R^n}<=c_0||x||_{R^m}$(4)
+$\forall x \in R^m ||Ax||_{R^n}<=c_0||x||_{R^m}$==(4)==
 =>$||A||<=c_0$
 $\forall x \in R^m, ||x||_{R^n}<=1$
 (4)=>$||Ax||_{R^n}=c_0||x||{R^m}<=c_0$
 (5)=>$sup||Ax||_{R^n}<=c_0$
 6. $A = \begin{bmatrix}a_n.....a_{1m} \\.\\.\\.\\a_m.....a_{nm}\end{bmatrix}$
-$||A||<=(\sum\sum a_{ij}^2)^{1/2}$(6)
+$||A||<=(\sum\sum a_{ij}^2)^{1/2}$==(6)==
 $x=e_i\begin{bmatrix}x_{1} \\.\\ .\\.\\x_{m}\end{bmatrix}$        $||x||_{R^m}<=1$
-$Ax=A = \begin{bmatrix}a_nx_1+.....+x+ma_{1m} \\.\\.\\.\\a_mx_1+.....+a_{nm}x_m\end{bmatrix}$(7)
-7=>$||Ax||_n^2=\sum\limits_{i=1}^{n}(\sum\limits_{j=1}^{m}a_{ij}x_j)^{2}<=\sum\limits_{i=1}^{n}(\sum\limits_{j=1}^{m} a_{ij}^2)(\sum\limits_{i=1}^{n}<=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m} a_{ij}^2$(8)
-(8),5.=>(6) ЧТД нахуй
+$Ax=A = \begin{bmatrix}a_nx_1+.....+x+ma_{1m} \\.\\.\\.\\a_mx_1+.....+a_{nm}x_m\end{bmatrix}$==(7)==
+7=>$||Ax||_n^2=\sum\limits_{i=1}^{n}(\sum\limits_{j=1}^{m}a_{ij}x_j)^{2}<=\sum\limits_{i=1}^{n}(\sum\limits_{j=1}^{m} a_{ij}^2)(\sum\limits_{i=1}^{n}<=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m} a_{ij}^2$==(8)==
+(8),5=>(6) ЧТД 
 7. $R^{m}, R^{n},R^{k}$
 $1<=m,n,k$
 $A:R^m->R^{n},B:R^n->R^k$
@@ -40,11 +40,11 @@ $BA:R^m->R^k$
 $||BA||<=||B||*||A||$ при $x \in R^{m} ||x||_{R^m}<=1$
 $y=Ax$
 $BA(x)=B(Ax)=By$
-$||BA(x)||_{R^k}=||By||_{R^k}<=||B||*||y||_{R^n}$(9)
+$||BA(x)||_{R^k}=||By||_{R^k}<=||B||*||y||_{R^n}$==(9)==
 $||y||_{R^n}=||Ax||_{R^n}<=||A||*||x||_{R^m}<=||A||$
 (9)(10)=>$||BA(x)||_{R^k}<=||B||*||A||$(11)
 5.,(11)=>7
-## Частные производные второго и последующих порядков
+### Частные производные второго и последующих порядков
 
 $\Upomega \in R^{n}$   ${n>=2}$
 $\Upomega$-открытое, $\Upomega\ne0$  $\exists f'_{x_{i}}(x)$ $\forall x \in \Upomega$
