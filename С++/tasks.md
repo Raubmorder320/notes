@@ -135,3 +135,40 @@ return -1; // Элемент не найден
 
 }
 ```
+
+### strings
+
+#### 1
+Ввести имя файла, возможно, содержащее путь, и вывести:
+a) имя последней папки в пути (без циклов).
+
+```C
+void str_1(){
+
+char s[] = "C:/ubuntu/is/the/best.h";
+
+int length = sizeof(s)/sizeof(char);
+
+char* start = s;
+
+char* symbol = strrchr(s, '/');
+
+int slash = symbol - start;
+
+char s2[slash+1];
+
+strncpy(s2, s, slash);
+
+s2[slash] = '\0';
+
+char* start2 = s2;
+
+char* symbol2 = strrchr(s2, '/');
+
+int slash2 = symbol2 - start2 + 1;
+
+getString(slash2, slash+1, s2);
+
+}
+```
+b) имя файла с путем, но расширение заменено на html (без циклов)
