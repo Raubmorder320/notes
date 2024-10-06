@@ -142,6 +142,34 @@ return -1; // Элемент не найден
 a) имя последней папки в пути (без циклов).
 
 ```C
+int getString(int pos, int len, char string[]) //функция для взятия среза от pos до конца строки
+
+{
+
+int i = 0;
+
+char substring[1000];
+
+  
+
+while (i < len) {
+
+substring[i] = string[pos + i - 1];
+
+i++;
+
+}
+
+substring[i] = '\0';
+
+puts(substring);
+
+return 0;
+
+}
+
+
+
 void str_1(){
 
 char s[] = "C:/ubuntu/is/the/best.h";
@@ -205,8 +233,86 @@ puts(s2);
 случаи:
 а) вхождения могут перекрываться
 ```C
+int str_2a(char* str, char* sub) {
+
+int count = 0; //счетчик
+
+int len = strlen(sub);
+
+for (int i = 0; i <= strlen(str) - len; i++) { //цикл от начала строки до длины строки минус длина образца
+
+if (strncmp(str + i, sub, len) == 0) { //условие сравнивает срез строки с образцом с помощью арифметики указателей
+
+count++;
+
+}
+
+}
+
+return count;
+
+}
 ```
 
 б) не могут перекрываться.
 ```C
+int str_2b(char* str, char* sub) {
+
+int count = 0; //счетчик
+
+int len = strlen(sub);
+
+int i = 0;
+
+int length = strlen(str);
+
+while (i<=length){
+
+if (strncmp(str + i, sub, len) == 0) { //условие сравнивает срез строки с образцом с помощью арифметики указателей
+
+count++;
+
+if (i+len<=length){ //проверка, можно ли перепрыгнуть на конец найденного образца, чтобы избежать перекрытий
+
+i+=len;
+
+continue;
+
+}
+
+}
+
+i++;
+
+}
+
+  
+
+return count;
+
+}
 ```
+
+#### 3 
+
+Написать функцию, принимающую в качестве параметров две строки и
+возвращающую копию первого параметра, из которой удалено первое
+вхождение второго параметра (без циклов).
+```C
+char* str_3(char* str, char* sub){
+
+int len = strlen(sub);
+
+char* enter = strstr(str, sub); //указатель на первое вхождение образца
+
+char* res = (char*)malloc(strlen(str) - len);
+
+strncpy(res, str, (int)(enter - str)); //копируем все от начала до первого вхождения
+
+strncat(res, enter+len, strlen(str)); //складываем с тем что после найденного вхождения
+
+return res;
+
+}
+```
+
