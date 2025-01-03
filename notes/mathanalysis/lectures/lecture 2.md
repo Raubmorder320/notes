@@ -1,6 +1,6 @@
 <font color="#00b050">продолжение</font>
 
-#### Теорема о смешанной производной
+#### Теорема о смешанной производной #дописать #виноградов
 $B_r(x_1,x_2)$
 $x_{0} = \begin{bmatrix}x_{1}\\ x_{2}\end{bmatrix}$ 
 $f:G \rightarrow R$ $f \in C(G)$
@@ -20,7 +20,7 @@ $\frac{\phi(x_2+h)-\phi(x_2)}{h}$
 
 $\frac{\phi(x_2+h)-\phi(x_2)}{h}=\frac{f(x_1+h,x_2+h)-f(x_1,x_2+h)-f(x_1+h,x_2)+f(x_1,x_2)}{h^2}=g(h)$==(4)==
 
-(3)=>$\forall x_{2} \in [x_2,x_2+h]$ $\exists \phi'(x_2)=\frac{f'_{x_2}(x_1+h,x_2)-f'_{x_2}(x_1+h,x_2)}{h}$==(5)==
+(3)=>$\forall x_{2} \in [x_2,x_2+h]$ $\exists \phi'(x_2)=\frac{f'_{x_2}(x_1+h,x_2)-f'_{x_2}(x_1,x_2)}{h}$==(5)==
 
 Применим теорему Лагранжа:
 $\exists h_2,0<h_2<h$
@@ -28,9 +28,9 @@ $\phi(x_2+h)-\phi(x_2)=\phi'(x_2+h_2)*h$ => $\frac{\phi(x_2+h)-\phi(x_2)}{h}=\ph
 
 (5)(6)=>$\frac{\phi(x_2+h)-\phi(x_2)}{h}=\frac{f'_{x_2}(x_1+h,x_2+h_2)-f'_{x_2}(x_1,x_2+h_2)}{h}$==(7')==
 
-$f'_{x_2}(x_1+h,x_2+h_2)-f'_{x_2}(x_1,x_2+h_2)$
+Рассмотрим: $f'_{x_2}(x_1+h,x_2+h_2)-f'_{x_2}(x_1,x_2+h_2)$
 $\phi(x_1)=f'_{x_2}(x_1,x_2+h_2)$
-$\forall x_{1} \in [x_1,x_1+h]$ $\exists \phi(x_1)=f''{x_2x_1}(x_1,x_2+h_2)$==(7)==
+$\forall x_{1} \in [x_1,x_1+h]$ $\exists \phi(x_1)=f''_{x_2x_1}(x_1,x_2+h_2)$==(7)==
 
 Снова Лагранж:
 $\exists h_1,0<h_1<h$ т.ч. $\phi(x_1+h)-\phi(x_1)=\phi'(x_1+h_1)*h$==(8)==
@@ -46,14 +46,14 @@ $\frac{\psi(x_1^0+h)-\psi(x_1^0)}{h}=\frac{f(x_1^0+h,x_2^0+h)-f(x_1^0+h,x_2^0)-f
 
 $\forall x \in [x_1^0,x_1^0+h]$  $\exists \psi'(x)$
 
-$\psi(x_1)=\frac{f'_{x_1}(x_1,x_2^0+h)-f'_{x_1}(x_1,x_2^0)}{h^2}$==(13)==
+$\psi'(x_1)=\frac{f'_{x_1}(x_1,x_2^0+h)-f'_{x_1}(x_1,x_2^0)}{h^2}$==(13)==
 
-(13)=> $\frac{\psi(x_1^0+h-\psi(x_1^0)}{h}$    (опять Лагранж $\exists 0<h^-_1<h$   $\exists 0<h_2^-<h$)$=\psi'(x_1^0+h_1^-)=$
+(13)=> $\frac{\psi(x_1^0+h)-\psi(x_1^0)}{h}$    (опять Лагранж $\exists 0<h^-_1<h$   $\exists 0<h_2^-<h$)$=\psi'(x_1^0+h_1^-)=$
 
 $=\frac{f'_{x_1}(x_1^0+h_1^0,x_2^0+h)-f'_{x_1}(x_1^0+h,x_2^0)}{h}=f'_{x_1}(x_1^0+h_1^0,x_1)=f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)$ ==(14)==
 
 (12)(13)(14)=>$g(h)=f''_{x_1x_2}((x_1^0+h_1^0,x_2^0+h_2^-))$(==15)==
-(10)(15)=> $f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)=''_{x_2x_1}(x_1^0+h_1^0,x_2^0+h_2^-)$==(16)==
+(10)(15)=> $f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)=f''_{x_2x_1}(x_1^0+h_1^0,x_2^0+h_2^-)$==(16)==
 $f''_{x_2x_1}(x_1^0+h_1^0,x_2^0+h_2^-)\rightarrow f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)$ ==(17)==
 $f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)\rightarrow f''_{x_2x_1}(x_1^0+h_1^0,x_2^0+h_2^-)$==(18)== 
 В силу единственности предела (16)-(18)=>(1)
@@ -71,7 +71,7 @@ $F(x_i,x_j)=f(x_1^0,...,x_n^0)$
 $F''(x_i,x_j)=f''_{x_ix_j}(x_1^0,...,x_n^0)$
 
 $\Upomega \in R^n;n>=2$
-$f \in C(\Upomega),\forall x \in \Upomega f'_{x_i}(x),f'_{x_{j}}(x)\in C(\Upomega)$
+$f \in C(\Upomega),\forall x \in \Upomega \ \ f'_{x_i}(x),f'_{x_{j}}(x)\in C(\Upomega)$
 $f \in C(\Upomega),\forall x \in \Upomega f''_{x_jx_i}(x),f''_{x_{i}x_j}(x)\in C(\Upomega)$
 $\forall x \in \Upomega f''_{x_jx_i}(x)=f''_{x_{i}x_j}(x)$
 
