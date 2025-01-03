@@ -7,7 +7,7 @@ $f:G \rightarrow R$ $f \in C(G)$
 $\forall x \in G$ $\exists f'_{x_1}(x),f'_{x_{2}}\in C(G)$
 $\forall x \in G$ $\exists f''_{x_1x_{2}}(x),f''_{x_2x_{1}}(x)$
 $f''_{x_1x_{2}}(x),f''_{x_1x_{2}}(x)$ непрерывны в $x_0$, тогда $f''_{x_1x_{2}}(x_0)=f''_{x_2x_{1}}(x_0)$==(1)==
-#### Док-во:
+##### Док-во:
 $0<h<\frac{r}{\sqrt{2}}$     $(x_1+h,x_2+h)\in G$
 
 $g(h)=\frac{f(x_1+h,x_2+h)-f(x_1+h,x_2)-f(x_1,x_2+h)+f(x_1,x_2)}{h^2}$==(2)==

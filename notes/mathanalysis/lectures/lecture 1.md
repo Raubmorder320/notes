@@ -2,28 +2,33 @@
 
 $A:R^{m}\rightarrow R^n$
 $m,n\geq1$ 
-$||A||=sup_{x \in R^m}||Ax||_{R^n}$
+**Опр**: Норма линейного оператора А
+$||A||=sup_{x \in R^m}||Ax||_{R^n}$ ==(1)==
+
 #### Свойства нормы линейного оператора
-1. $||A||\geq 0; \quad||A||=0 \rightarrow A=O$,   т.е. $Ox=O_n\forall$ $x \in R_m$
-   
-$A_{n*m}=\begin{bmatrix}a_{11}.....a_{1m} \\.\\.\\.\\a_{n1}.....a_{nm}\end{bmatrix}\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=\begin{bmatrix}a_{11} \\.\\1\\.\\a_{ni}\end{bmatrix}$
+1. $||A||\geq 0; \quad||A||=0 \rightarrow A=O$,   т.е. $Ox=O_n\ \ \forall$ $x \in R_m$
+
+
+$A_{n*m}=\begin{bmatrix}a_{11}.....a_{1m} \\.\\.\\.\\a_{n1}.....a_{nm}\end{bmatrix}f_j=\begin{bmatrix}a_{1j} \\.\\1\\.\\a_{nj}\end{bmatrix}$
 
 $1<=j<=m \qquad 1<=i<=n$
 $e_i=[0....1...0]$
 
 $f_j=\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}$
 
-$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}=0$ ==(2)==
+$e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\.\\.\\0\end{bmatrix}=0$ ==(2)==
 
 $e_i(A_{n*m}f_j)=e_i\begin{bmatrix}a_{1j} \\.\\ .\\.\\a_{ij}\end{bmatrix}=a_{ij}$ ==(3)==
 
 (2),(3)$\implies a_{ij}=0$
 
 2. $cR$  $||cA||=|c|*||A||$
+
 $||cA||= sup_{x\in R^m}||(cA)x||_{R^n}=sup||c(Ax)||_{R^n}=sup(|c|*||Ax||)_{R^n}=|c|*sup||Ax||_{R^{n}}=|c|*||A||$
 
 3. $A,B:R^m\to R^n$
-$||A+B||\leq||A||+||B||$ $||A+B||=sup_{x \in R^m}||(A+B)x||_{R^n}=sup||Ax+Bx||_{R^n}\leq sup(||Ax||_{R^n}+||Bx||_{R^n})\leq sup||Ax||_{R^n}+sup||Bx||_{R^n}=||A||+||B||$
+$||A+B||\leq||A||+||B||$
+$||A+B||=sup_{x \in R^m}||(A+B)x||_{R^n}=sup||Ax+Bx||_{R^n}\leq sup(||Ax||_{R^n}+||Bx||_{R^n})\leq sup||Ax||_{R^n}+sup||Bx||_{R^n}=||A||+||B||$
 
 4. $||Ax||_{R^{n}} \leq||A||*||x||_{R^{m}}$   $\forall x \in R^m$
 $x\ne0$  $t=||x||_{R^m}>0$
@@ -81,7 +86,7 @@ $f^{(l+1)}_{x_ix_j...x_sx_t}(x_0)=(f^{(l)}_{x_ix_j...x_s})_{x_{t}}'(x_0)$
 $\frac{\partial^lf(x)}{\partial x_s...dx_jd_xi}$
 
 *<font color="#8064a2">конец первой лекции</font>*
-asdfasdfasd
+
 
 
 
