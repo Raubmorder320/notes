@@ -81,7 +81,7 @@ $f^{(l+1)}_{x_ix_j...x_sx_t}(x_0)=(f^{(l)}_{x_ix_j...x_s})_{x_{t}}'(x_0)$
 $\frac{\partial^lf(x)}{\partial x_s...dx_jd_xi}$
 
 *<font color="#8064a2">конец первой лекции</font>*
-asdfasdfasd
+
 
 
 
