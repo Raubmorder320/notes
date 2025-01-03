@@ -16,7 +16,7 @@ $e_i=[0....1...0]$
 
 $f_j=\begin{bmatrix}0 \\.\\1\\.\\0\end{bmatrix}$
 
-<<<<<<< HEAD
+
 $e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\.\\.\\0\end{bmatrix}=0$ ==(2)==
 
 $e_i(A_{n*m}f_j)=e_i\begin{bmatrix}0 \\.\\.\\.\\0\end{bmatrix}=0$ ==(2)== т.к. $||A|| = 0 \implies ||Ax||_{n} = 0\implies Ax = O_{n}$
