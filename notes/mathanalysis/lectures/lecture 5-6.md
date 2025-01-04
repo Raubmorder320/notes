@@ -2,9 +2,9 @@
 
 ### Формула Тейлора с остатком в форме Пеано для функций от n переменных
 #### Теорема: 
-$f: E \rightarrow R$    $E \in R^{n}, \ n\geq2 \ \ x_{0}\in E, \ \omega \subset E$
+$f: E \rightarrow R$    $E \subset R^{n}, \ n\geq2 \ \ x_{0}\in E, \ \omega \subset E$
 $f \in C^{r}(\omega),  \ r \geq 1 \ \ \ f(x_{0}+H) \ = \ f(x_{0}) + \sum\limits_{k=1}^{n}\sum\limits_{|\alpha|=k} \frac{1}{\alpha!} \partial^{\alpha} f(x_{0})H^{\alpha} + \rho(H)$ ==(1)==
-где $\frac{\rho(H)}{\|H\|^{2}}\rightarrow0, \ H\rightarrow0_{n}$ ==(2)==
+где $\frac{\rho(H)}{\|H\|^{r}}\rightarrow0, \ H\rightarrow0_{n}$ ==(2)==
 
 Доказательство:
 1. $r=1$  
@@ -15,8 +15,8 @@ $f \in C^{r}(\omega),  \ r \geq 1 \ \ \ f(x_{0}+H) \ = \ f(x_{0}) + \sum\limits_
  $|\alpha|=1 \ \ \ \alpha=(0,..,1,0,..,0)$
  $C^{\alpha}_{1} \ = \ \frac{0!..1!..0!}{1!}$
 $\sum\limits_{\nu=1}^{n}f'_{x_{0}}h_{\nu} \ = \ \sum\limits_{|\alpha|=1}C^{\alpha}_{1}\partial^{\alpha}f(x_{0})H^{\alpha}$ ==(5)==
-2. $r\geq2$
-$\exists c \in (0,1): \ f(x_{0}+H) \ = \ f(x_{0}) + \sum\limits_{k=1}^{r-1}\sum\limits_{|\alpha|=r} \frac{1}{\alpha!} \partial^{\alpha} f(x_{0})H^{\alpha} + \sum\limits_{|\alpha|=r} \frac{1}{\alpha!} \big(\partial^{\alpha} f(x_{0}+cH)-\partial^{\alpha} f(x_{0})\big)H^{\alpha}$==(6)==
+2. $r\geq2$ #дописать
+$\exists c \in (0,1): \ f(x_{0}+H) \ = \ f(x_{0}) + \sum\limits_{k=1}^{r-1}\sum\limits_{|\alpha|=k} \frac{1}{\alpha!} \partial^{\alpha} f(x_{0})H^{\alpha} + \sum\limits_{|\alpha|=r} \frac{1}{\alpha!} \big(\partial^{\alpha} f(x_{0}+cH)-\partial^{\alpha} f(x_{0})\big)H^{\alpha}$==(6)==
 $f \in C^{r}(\omega)$=>$\partial^{\alpha}f(x_{0}+cH)-\partial^{\alpha}f(x_{0}) \ \rightarrow 0, H \rightarrow 0_{n} \ \ \forall \alpha, \ |\alpha|=r$ ==(7)==
 $H^{\alpha}=h_{1}^{\alpha_{1}}...h_{n}^{\alpha_{n}}$=>$|H| \leq \|H\|^{\alpha_1}...\|H\|^{\alpha_n}=\|H\|^{|\alpha|}=\|H\|^{r}$
 $\frac{\partial^{\alpha}f(x_{0}+cH)-\partial^{\alpha}f(x_{0})}{\|H\|^{r}} \leq |\partial^{\alpha}f(x_{0}+cH)-\partial^{\alpha}f(x_{0})| \longrightarrow 0, H \longrightarrow 0_{n}$ ==(8)==
@@ -30,9 +30,9 @@ $H = \begin{bmatrix} h_{1} \\ . \\ . \\ . \\ h_{n} \end{bmatrix}$
 $r \geq 1, \ \ f \in C^{r}(\omega) \ \ \ \partial^{r}f(x,H) = \sum\limits_{|\alpha|=r}A_{r ,\alpha}\partial^{\alpha}f(x)H^\alpha$ ==(9)==
 $A_{1,\alpha}=1 \ \ \ \forall \alpha, \ \ \ |\alpha|=1$
 $f \in C^{r+1}(\omega)$
-$\partial^{r+1} f(x,H) = \sum\limits_{|\alpha|=r}A_{r ,\alpha}\partial(\partial^{\alpha}f(x))H^{\alpha} = \sum\limits_{|\alpha|=r+1}A_{r+1 ,\alpha}\partial^{\alpha}f(x))H^{\alpha}$ ==(10)==
+$\partial^{r+1} f(x,H) = \sum\limits_{|\alpha|=r}A_{r ,\alpha}\partial(\partial^{\alpha}f(x), H)H^{\alpha} = \sum\limits_{|\alpha|=r+1}A_{r+1 ,\alpha}\partial^{\alpha}f(x))H^{\alpha}$ ==(10)==
 $\partial^{1}f(x,H) = \sum\limits_{k=1}^{n}f'_{x_k}(x)h_k$
-$\partial^{2}f(x,H) = \sum\limits_{k=1}^{n} \partial (f'_{x_k}(x))h_{k} = \sum\limits_{k=1}^{n} \left(\sum\limits_{l=1}^{n} f''_{x_{k}x_{l}}(x)h_{l}\right)h_{k} = \sum\limits_{k=1}^{n}\sum\limits_{l=1}^{n} f''_{x_{k}x_{l}}(x)h_{l}h_{k} = 1\sum\limits_{k=1}^{n} f''_{x_{k}x_{l}}(x)h_{k}^{2} + 2\sum\limits_{k<l} f''_{x_{k}x_{l}}(x)h_{k}h_{l} = \sum\limits_{|\alpha|=2}C_{2}^{\alpha} \partial f(x) H^{\alpha}$
+$\partial^{2}f(x,H) = \sum\limits_{k=1}^{n} \partial (f'_{x_k}(x))h_{k} = \sum\limits_{k=1}^{n} \left(\sum\limits_{l=1}^{n} f''_{x_{k}x_{l}}(x)h_{l}\right)h_{k} = \sum\limits_{k=1}^{n}\sum\limits_{l=1}^{n} f''_{x_{k}x_{l}}(x)h_{l}h_{k} = 1\sum\limits_{k=l}^{n} f''_{x_{k}x_{k}}(x)h_{k}^{2} + 2\sum\limits_{k<l} f''_{x_{k}x_{l}}(x)h_{k}h_{l} = \sum\limits_{|\alpha|=2}C_{2}^{\alpha} \partial f(x) H^{\alpha} h^{k} h^{l}$
 $A_{2,\alpha} = C_{2}^{\alpha}$
 
 #### Теорема

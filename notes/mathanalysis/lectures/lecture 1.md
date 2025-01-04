@@ -76,15 +76,15 @@ $||y||_{R^n}=||Ax||_{R^n}<=||A||*||x||_{R^m}<=||A||$ ==(10)==
 $\Upomega \in R^{n}$   ${n>=2}$
 $\Upomega$-открытое, $\Upomega\ne0$  $\exists f'_{x_{i}}(x)$ $\forall x \in \Upomega$
 $f:\Upomega->R$             $x_{0} \in \Upomega$
-$1<=i<=n$
-$1<=j<=m$
+$1 \le i \le n$
+$1 \le j \le m$
 пусть $\exists(f'_{x_{i}})_{x_{i}}'(x_0)$
 $f''_{x_ix_j}(x_0)=(f'_{x_{i}})_{x_{i}}'(x_0)$
 пусть $\forall x \in \Upomega$ $\exists f''_{x_ix_j}(x)$
 $\exists(f''_{x_ix_j})'_{x_k}$
 $f'''_{x_ix_jx_k}(x_0)=(f''_{x_ix_j})'_{x_k}$
 
-$l>=3$
+$l \ge 3$
 $x_{0} \in \Upomega$    $f^{(l)}_{x_ix_j...x_g}(x_0)$
 пусть $\forall x \in \Upomega$ $\exists f^{(l)}_{x_ix_j...x_g}(x)$
 $\exists (f^{(l)}_{x_ix_j...x_s})_{x_{t}}'(x_0)$

@@ -61,20 +61,23 @@ $f''_{x_1x_2}(x_1^0+h_1^0,x_2^0+h_2^-)\rightarrow f''_{x_2x_1}(x_1^0+h_1^0,x_2^0
 <font color="#ffff00">ЧТД</font>
 
 #### Следствие для n>2
-$x_{0} \in R^{n}, n>=3$
+$x_{0} \in R^{n}, n \ge 3$
 $x_0=(x_1^0,x_2^0,...,x_n^0)$
 $f: B_r(x^0) \rightarrow R$  $f \in C(B_r(x^0))$
 $\forall x \in B_r(x^0)$  $\exists f'_{x_2}(x),\exists f'_{x_{3}}(x) \in C(B_r(x^0))$
 $\forall x \in B_r(x^0)$  $\exists f''_{x_ix_j}(x),\exists f''_{x_jx_i}(x)$
+Тогда:
 $f''_{x_ix_j}(x)=f''_{x_jx_i}(x)$
+Если рассмотреть:
 $F(x_i,x_j)=f(x_1^0,...,x_n^0)$
 $F''(x_i,x_j)=f''_{x_ix_j}(x_1^0,...,x_n^0)$
-
+То можно применить предыдущую теорему
+ 
 $\Upomega \in R^n;n>=2$
 $f \in C(\Upomega),\forall x \in \Upomega \ \ f'_{x_i}(x),f'_{x_{j}}(x)\in C(\Upomega)$
-$f \in C(\Upomega),\forall x \in \Upomega f''_{x_jx_i}(x),f''_{x_{i}x_j}(x)\in C(\Upomega)$
-$\forall x \in \Upomega f''_{x_jx_i}(x)=f''_{x_{i}x_j}(x)$
-
+$f \in C(\Upomega),\forall x \in \Upomega f''_{x_jx_i}(x),f''_{x_{i}x_j}(x)\in C(\Upomega)$ $\implies$
+$\forall x \in \Upomega \ \ f''_{x_jx_i}(x)=f''_{x_{i}x_j}(x)$  (то есть для каждого х применить следствие)
+<font color="#ffff00">(Условие на непрерывность вторых производных важно!)</font>
 Рассмотрим случай частной производной третьего порядка
 $\Upomega \in R^{n} n>=2$
 $i\ne j,k$

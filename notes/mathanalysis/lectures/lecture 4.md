@@ -29,18 +29,18 @@ $|\beta|=r+1$
 $\beta=(0,..,\beta_{i_1},..,\beta_{i_l},..,0)$
 $\beta_{i_{k}}\ne 0$
 (25)=$\sum\limits_{|\beta|=r+1}\partial^{\beta}f(y+tH)H^{\beta}\sum\limits_{по \ всем \ \alpha \ и \ \nu \ т.ч. \ \alpha+e_{\nu}=\beta}C^{\alpha}_{r}$
-$1<=\mu<=l$
+$1 \le \mu \le l$
 $\nu=i_1,...,i_l$
-$\alpha^{(\mu)}=(0,..,\beta_{i_1},..,\beta^{-1}_{i_{\mu}},..,0,..,\beta_{i_l},..,0)$
+$\alpha^{(\mu)}=(0,..,\beta_{i_1},..,\beta_{i_{\mu}} - 1,..,0,..,\beta_{i_l},..,0)$
 $\alpha^{(\mu)}+e_{i_\mu}=\beta$==(26)==
-(26)=>  $\sum\limits_{\alpha+e_{\nu}=\beta}C^{\alpha}_{r}=\sum\limits_{\mu=1}^{l}C^{\alpha^{(\mu)}}_{r}=\sum\limits_{\mu=1}^{l} \frac{r!}{\beta_{i_1}!*..*(\beta_{i_{\mu}})^{-1}!*..*\beta_{i_{l}}!}$ = $\frac{r!}{\beta_{i_1}!*..*(*..*\beta_{i_{l}}!}\sum\limits_{\mu=1}^{l}\beta_{i_{mu}}$ = $\frac{r!}{\beta!}|\beta| = \frac{r!}{\beta!}(r+1)= \frac{(r+1)!}{\beta!} = C^{\beta}_{r+1}$==(27)==
+(26)=>  $\sum\limits_{\alpha+e_{\nu}=\beta}C^{\alpha}_{r}=\sum\limits_{\mu=1}^{l}C^{\alpha^{(\mu)}}_{r}=\sum\limits_{\mu=1}^{l} \frac{r!}{\beta_{i_1}!*..*(\beta_{i_{\mu}}-1)!*..*\beta_{i_{l}}!}$ = $\frac{r!}{\beta_{i_1}!*..*(*..*\beta_{i_{l}}!}\sum\limits_{\mu=1}^{l}\beta_{i_{mu}}$ = $\frac{r!}{\beta!}|\beta| = \frac{r!}{\beta!}(r+1)= \frac{(r+1)!}{\beta!} = C^{\beta}_{r+1}$==(27)==
 (25),(26),(27)=> $g^{(r+1)}(t)= \sum\limits_{|\beta|=r+1}\partial^{\beta}f(y+tH)H^{\beta}C^{\beta}_{r+1}$
 ч.т.д.
-
+x
 #### Формула Тейлора с остатком в форме Лагранжа для функции от n переменных
-$E\subset R^{n},n >=2, E$-открыто
+$E\subset R^{n},n \ge 2, E$-открыто
 $x_{0}\in E, \ \ B_{\delta}(x_{0})\subset E$
-$f\in C^{(r+1)}(E), \ \ \ H\in R^{n}, \ \ ||H||_{R^{n}}<\delta$
+$f\in C^{r+1}(E), \ \ \ H\in R^{n}, \ \ ||H||_{R^{n}}<\delta$
 $\exists c, \ 0<c<1$
 $f(x_{0}+H)=f(x_{0})+ \sum\limits_{k=1}^{r} \sum\limits_{|\alpha|=k} \frac{1}{\alpha!}\partial^{\alpha}f(x_{0})H^{\alpha}+\sum\limits_{|\alpha|=r+1}\frac{1}{\alpha!}\partial^{\alpha}f(x_{0}+cH)H^{\alpha}$
 Доказательство:
